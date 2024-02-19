@@ -27,6 +27,8 @@ df.loc[df["Education"] == "Not Graduate", "Education"] = False
 df.loc[df["Self_Employed"] == "Yes", "Self_Employed"] = True
 df.loc[df["Self_Employed"] == "No", "Self_Employed"] = False
 
+df.loc[df["CoapplicantIncome"] == 0.0, "CoapplicantIncome"] = np.nan
+
 df.loc[df["Credit_History"] == 1.0, "Credit_History"] = True
 df.loc[df["Credit_History"] == 0.0, "Credit_History"] = False
 
