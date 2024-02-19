@@ -18,8 +18,8 @@ df_largeloan = df.query("LoanAmount > 500")
 df_neet = df.query("Education == False and ApplicantIncome < 2000")
 #print(df_neet.head())
 
-df_credit = df.query("Loan_Status == False")
-print(df_credit.head())
+df_loan = df.query("Loan_Status == False")
+print(df_loan.head())
 
-df_credit.to_csv("data\\df_credit.csv",
+df_loan.to_csv("data\\df_credit.csv",
                  sep = ";")
